@@ -31,7 +31,7 @@
 .tasks-wrapper {
     display: block;
     width: 500px;
-    margin: 0 auto 0;
+    margin: 15px auto 0;
 }
 
 .task {
@@ -41,6 +41,8 @@
 }
 
 .task-row-wrapper {
+    margin-top: 20px;
+    margin-bottom: 17px;
     display: flex;
 }
 
