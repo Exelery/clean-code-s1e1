@@ -40,7 +40,7 @@
     flex-grow: 1;
 }
 
-.task-row-wrapper {
+.add-task {
     margin-top: 20px;
     margin-bottom: 17px;
     display: flex;
@@ -85,7 +85,8 @@ input,button{
     text-transform: uppercase;
 }
 
-.list__input {
+.list__input,
+.add-task__input{
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -98,7 +99,8 @@ input,button{
     color: #888;
 }
 
-.list__input:focus {
+.list__input:focus,
+.add-task__input:focus {
     color: #333;
 }
 
