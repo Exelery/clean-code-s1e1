@@ -133,7 +133,7 @@ input,button{
     margin: 0 10px;
 }
 
-.list__item > .list__label {
+.list__label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
@@ -161,15 +161,15 @@ input,button{
 }
 
 /* Edit Task */
-.list .list__item .list__input {
+.list__item .list__input {
     display: none;
 }
 
-.list .edit-mode .list__input {
+.edit-mode .list__input {
     display: inline-block;
     width: 224px;
 }
 
-.list .edit-mode .list__label {
+.edit-mode .list__label {
     display: none;
 }
