@@ -33,24 +33,25 @@ var createNewTaskElement=function(taskString){
     var deleteButtonImg=document.createElement("img");//delete button image
 
     label.innerText=taskString;
-    label.className='task list__label';
+    label.className='task item__label';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
     editInput.type="text";
-    editInput.className="task list__input";
+    editInput.className="task item__input";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="list__edit btn";
+    editButton.className="item__edit btn";
 
-    deleteButton.className="list__delete btn";
+    deleteButton.className="item__delete btn";
     deleteButtonImg.src='./remove.svg';
     deleteButtonImg.alt="remove";
-    deleteButtonImg.classList.add("list__cross");
+    deleteButtonImg.classList.add("item__cross");
     deleteButton.appendChild(deleteButtonImg);
 
     listItem.classList.add("list__item")
-    checkBox.classList.add("list__check")
+    listItem.classList.add("item")
+    checkBox.classList.add("item__check")
 
 
     //and appending.
@@ -89,7 +90,7 @@ var editTask=function(){
 
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
-    var editBtn=listItem.querySelector(".list__edit");
+    var editBtn=listItem.querySelector(".item__edit");
     var containsClass=listItem.classList.contains("edit-mode");
     //If class of the parent is .editmode
     if(containsClass){
@@ -161,8 +162,8 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
     var checkBox=taskListItem.querySelector("input[type=checkbox]");
-    var editButton=taskListItem.querySelector("button.list__edit");
-    var deleteButton=taskListItem.querySelector("button.list__delete");
+    var editButton=taskListItem.querySelector("button.item__edit");
+    var deleteButton=taskListItem.querySelector("button.item__delete");
 
 
     //Bind editTask to edit button.
