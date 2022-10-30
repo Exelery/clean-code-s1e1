@@ -110,7 +110,7 @@ input,button{
     margin: 0 0 20px;
 }
 
-#new-task {
+.add-task__input {
     width: 318px;
 }
 
