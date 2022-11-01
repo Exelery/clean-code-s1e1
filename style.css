@@ -5,6 +5,10 @@
     font-family: Lato, sans-serif;
 }
 
+.head__name{
+  display: none;
+}
+
 .head {
     width: 500px;
     margin: 0 auto;
