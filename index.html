@@ -18,15 +18,15 @@
     </header>
     <main class="tasks-wrapper">
       <section class="wrapper-add">
-        <h3 class="title">Add Item</h3>
-        <div class="add-task">
+        <h3 class="title wrapper-add__title">Add Item</h3>
+        <div class="add-task wrapper-add__add-task">
           <input id="new-task" class="add-task__input task" type="text">
-          <button class="btn">Add</button>
+          <button class="btn add-task__btn">Add</button>
         </div>
       </section>
       <section class="wrapper-todo">
-        <h3 class="title">Todo</h3>
-        <ul id="incomplete-tasks" class="list incomplete-tasks">
+        <h3 class="title wrapper-todo__title">Todo</h3>
+        <ul id="incomplete-tasks" class="list wrapper-todo__list">
           <li class="list__item item">
             <input type="checkbox" class="item__check">
             <label class="task item__label">Pay Bills</label>
@@ -48,8 +48,8 @@
         </ul>
       </section>
       <section class="wrapper-completed">
-        <h3 class="title">Completed</h3>
-        <ul id="completed-tasks" class="list completed-tasks">
+        <h3 class="title wrapper-completed_title">Completed</h3>
+        <ul id="completed-tasks" class="list wrapper-completed__list">
           <li class="list__item item">
             <input type="checkbox" class="item__check" checked>
             <label class="task item__label">See the Doctor</label>
